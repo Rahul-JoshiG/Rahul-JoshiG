@@ -9,11 +9,63 @@
     android:gravity="top|center"
     tools:context=".MainActivity">
 
-
-    <ImageView
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:id="@+id/pic1"
-        android:src="@drawable/ic_launcher_background"/>
+        android:layout_height="wrap_content"
+        android:background="#8BC34A"
+        android:layout_margin="14dp"
+        android:padding="12dp"
+        android:text="@string/my_application"
+        android:textAlignment="center"
+        android:textColor="#B71C1C"
+        android:textSize="28sp"
+        android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tic_tac_toe"
+        android:layout_marginTop="12dp"
+        android:textSize="24sp"
+        android:textColor="#061CED"
+        android:background="#32C596"
+        android:padding="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose the Player"
+        android:layout_marginTop="14dp"
+        android:textSize="20sp"
+        android:textColor="#9002A8"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/player1"
+            android:text="X"
+            android:textSize="30sp"
+            android:layout_margin="14dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/player2"
+            android:text="O"
+            android:textSize="30sp"
+            android:layout_margin="14dp"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/startGame"
+        android:layout_margin="14dp"
+        android:textSize="30sp"/>
 </LinearLayout>
